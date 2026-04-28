@@ -94,36 +94,24 @@ border-radius:999px;
 text-decoration:none;
 font-size:16px;
 font-weight:600;
-letter-spacing:0.3px;
 transition:all .3s ease;
 }
 
 .btn-primary{
 margin-top:34px;
 background:linear-gradient(135deg,#161616,#0d0d0d);
-color:#ffffff;
+color:#fff;
 border:1px solid rgba(255,255,255,.10);
-box-shadow:0 12px 30px rgba(0,0,0,.35);
 }
 
 .btn-primary:hover{
 transform:translateY(-2px);
-background:linear-gradient(135deg,#1f1f1f,#111111);
-box-shadow:0 16px 38px rgba(0,0,0,.45);
 }
 
 .btn-whatsapp{
 margin-top:30px;
 background:linear-gradient(135deg,#1faa59,#169c46);
-color:#ffffff;
-border:1px solid rgba(255,255,255,.08);
-box-shadow:0 12px 30px rgba(22,156,70,.24);
-}
-
-.btn-whatsapp:hover{
-transform:translateY(-2px);
-background:linear-gradient(135deg,#24b861,#179443);
-box-shadow:0 16px 38px rgba(22,156,70,.30);
+color:#fff;
 }
 
 /* SECTION */
@@ -141,7 +129,6 @@ padding-top:18px;
 .section h2{
 font-size:31px;
 font-weight:600;
-letter-spacing:-0.5px;
 margin-bottom:14px;
 }
 
@@ -149,9 +136,7 @@ margin-bottom:14px;
 max-width:700px;
 margin:auto;
 font-size:16px;
-line-height:1.75;
 color:#a3a3a3;
-font-weight:300;
 }
 
 /* FEATURES */
@@ -163,23 +148,9 @@ gap:22px;
 }
 
 .feature{
-background:#111111;
-border:1px solid rgba(255,255,255,.06);
+background:#111;
 border-radius:22px;
 padding:30px 24px;
-box-shadow:0 12px 35px rgba(0,0,0,.22);
-transition:.3s;
-}
-
-.feature:hover{
-transform:translateY(-4px);
-}
-
-.feature-icon{
-font-size:18px;
-margin-bottom:14px;
-display:block;
-color:#ffffff;
 }
 
 .feature-title{
@@ -191,13 +162,12 @@ margin-bottom:8px;
 .feature-desc{
 font-size:14px;
 color:#9e9e9e;
-line-height:1.6;
 }
 
 /* LOCATION */
 .address{
 margin-top:28px;
-margin-bottom:30px;
+margin-bottom:25px;
 font-size:16px;
 color:#d4d4d4;
 line-height:1.7;
@@ -206,51 +176,47 @@ line-height:1.7;
 .map-box{
 max-width:900px;
 margin:auto;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+border:1px solid rgba(255,255,255,.08);
 }
 
 .map-box iframe{
 width:100%;
 height:340px;
 border:0;
-border-radius:24px;
-box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.btn-map{
+margin-top:20px;
+background:#1a1a1a;
+border:1px solid rgba(255,255,255,.1);
+color:#fff;
+}
+
+.btn-map:hover{
+transform:translateY(-2px);
 }
 
 /* TESTIMONIALS */
 .testimonials{
 max-width:820px;
-margin:42px auto 0;
-text-align:left;
+margin:auto;
 display:grid;
 gap:18px;
+text-align:left;
 }
 
 .testimonial{
-background:#111111;
-border:1px solid rgba(255,255,255,.06);
-border-left: none;
-border-radius:20px;
+background:#111;
 padding:24px;
-box-shadow:0 12px 30px rgba(0,0,0,.24);
+border-radius:20px;
 }
 
 .stars{
 color:#facc15;
-font-size:15px;
-letter-spacing:2px;
 margin-bottom:10px;
-}
-
-.testimonial p{
-font-size:14px;
-line-height:1.7;
-color:#e6e6e6;
-margin-bottom:8px;
-}
-
-.testimonial span{
-font-size:13px;
-color:#8d8d8d;
 }
 
 /* FOOTER */
@@ -260,40 +226,22 @@ padding:40px 20px;
 font-size:13px;
 color:#666;
 border-top:1px solid rgba(255,255,255,.05);
-margin-top:20px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
-.hero{
-padding:48px 18px 40px;
-}
-
 .hero h1{
 font-size:38px;
 }
 
-.hero p{
-font-size:16px;
-}
-
-.section{
-padding:42px 18px;
-}
-
-.section h2{
-font-size:27px;
+.map-box iframe{
+height:260px;
 }
 
 .btn{
 width:100%;
 max-width:320px;
-text-align:center;
-}
-
-.map-box iframe{
-height:260px;
 }
 }
 </style>
@@ -323,32 +271,28 @@ height:260px;
 
 <h2>Uma experiência óptica superior</h2>
 
-<p>Cada detalhe pensado para entregar excelência visual, estética refinada e atendimento personalizado.</p>
+<p>Cada detalhe pensado para entregar excelência visual e estética refinada.</p>
 
 <div class="features">
 
 <div class="feature">
-<span class="feature-icon">✦</span>
 <div class="feature-title">Exames precisos</div>
-<div class="feature-desc">Tecnologia moderna para avaliar sua visão com segurança.</div>
+<div class="feature-desc">Tecnologia moderna para avaliar sua visão.</div>
 </div>
 
 <div class="feature">
-<span class="feature-icon">◇</span>
 <div class="feature-title">Armações premium</div>
-<div class="feature-desc">Modelos elegantes que valorizam seu estilo.</div>
+<div class="feature-desc">Modelos elegantes e confortáveis.</div>
 </div>
 
 <div class="feature">
-<span class="feature-icon">◉</span>
 <div class="feature-title">Lentes avançadas</div>
-<div class="feature-desc">Mais conforto, nitidez e proteção visual.</div>
+<div class="feature-desc">Mais nitidez e proteção visual.</div>
 </div>
 
 <div class="feature">
-<span class="feature-icon">◆</span>
 <div class="feature-title">Atendimento exclusivo</div>
-<div class="feature-desc">Orientação individual para a melhor escolha.</div>
+<div class="feature-desc">Orientação personalizada.</div>
 </div>
 
 </div>
@@ -362,16 +306,22 @@ height:260px;
 <p>Visite nossa loja e descubra uma nova forma de cuidar da sua visão.</p>
 
 <div class="address">
-📍 Rua ExemploLanding, 123 - Centro<br>
+📍 Dom João Becker, 1080 - Ingleses Norte<br>
 Florianópolis - SC
 </div>
 
 <div class="map-box">
 <iframe
-src="https://www.google.com/maps?q=Florianopolis&output=embed"
+src="https://www.google.com/maps?q=Dom%20Jo%C3%A3o%20Becker%201080%20Ingleses%20Norte%20Florianopolis&output=embed"
 loading="lazy">
 </iframe>
 </div>
+
+<a class="btn btn-map"
+href="https://www.google.com/maps/dir/?api=1&destination=Dom+João+Becker+1080+Ingleses+Norte+Florianopolis"
+target="_blank">
+Abrir no Google Maps
+</a>
 
 </section>
 
@@ -383,20 +333,17 @@ loading="lazy">
 
 <div class="testimonial">
 <div class="stars">★★★★★</div>
-<p>Atendimento impecável e muito profissional. Me senti em um lugar realmente diferenciado.</p>
-<span>— Susana</span>
+<p>Atendimento impecável e muito profissional.</p>
 </div>
 
 <div class="testimonial">
 <div class="stars">★★★★★</div>
-<p>As lentes mudaram totalmente meu conforto visual. Qualidade excelente.</p>
-<span>— Rogério</span>
+<p>Lentes de altíssima qualidade, mudou meu conforto visual.</p>
 </div>
 
 <div class="testimonial">
 <div class="stars">★★★★★</div>
-<p>Elegância, confiança e atenção em cada detalhe. Recomendo sem pensar duas vezes.</p>
-<span>— Bruna</span>
+<p>Experiência premium do começo ao fim.</p>
 </div>
 
 </div>
