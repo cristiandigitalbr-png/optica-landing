@@ -8,147 +8,178 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0a0a0a;
-    color: #f5f5f5;
+body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:#0a0a0a;
+    color:#f5f5f5;
 }
 
 /* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 28px;
+header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:24px 20px;
 }
 
-.logo {
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #d4d4d4;
+.logo{
+    font-size:14px;
+    letter-spacing:3px;
+    color:#d4d4d4;
+    font-weight:500;
 }
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 80px 20px 40px;
+.hero{
+    text-align:center;
+    padding:50px 20px 60px;
+    max-width:1100px;
+    margin:auto;
 }
 
-.hero h1 {
-    font-size: 44px;
-    font-weight: 500;
-    margin: 0 0 15px;
-    letter-spacing: -1px;
+.hero h1{
+    font-size:48px;
+    margin:0 0 14px;
+    font-weight:600;
+    letter-spacing:-1px;
 }
 
-.hero p {
-    max-width: 520px;
-    margin: 0 auto;
-    color: #a3a3a3;
-    font-weight: 300;
-    line-height: 1.6;
+.hero p{
+    max-width:620px;
+    margin:0 auto 28px;
+    color:#a3a3a3;
+    line-height:1.7;
+    font-size:18px;
 }
 
-.hero img {
-    margin-top: 40px;
-    width: 100%;
-    max-width: 680px;
-    border-radius: 18px;
-    opacity: 0.95;
+.hero img{
+    display:block;
+    width:100%;
+    max-width:720px;
+    margin:35px auto 0;
+    border-radius:22px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
 }
 
 /* BUTTON */
-.btn {
-    margin-top: 25px;
-    display: inline-block;
-    padding: 14px 34px;
-    border-radius: 999px;
-    background: white;
-    color: black;
-    text-decoration: none;
-    font-weight: 500;
-    transition: 0.3s;
+.btn{
+    display:block;
+    width:fit-content;
+    margin:28px auto 0;
+    padding:15px 34px;
+    background:#ffffff;
+    color:#000;
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:600;
+    transition:.3s;
 }
 
-.btn:hover {
-    transform: scale(1.03);
-    opacity: 0.9;
+.btn:hover{
+    transform:translateY(-2px);
+    opacity:.92;
 }
 
 /* SECTION */
-.section {
-    padding: 80px 20px;
-    text-align: center;
+.section{
+    padding:70px 20px;
+    text-align:center;
+    max-width:1100px;
+    margin:auto;
 }
 
-.section h2 {
-    font-weight: 500;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
+.section h2{
+    font-size:34px;
+    margin:0 0 12px;
+    font-weight:600;
+    letter-spacing:-0.5px;
 }
 
-.section p {
-    color: #a3a3a3;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+.section p{
+    color:#a3a3a3;
+    max-width:650px;
+    margin:0 auto;
+    line-height:1.7;
+    font-size:17px;
 }
 
 /* FEATURES */
-.features {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+.features{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
 }
 
-.feature {
-    border-top: 1px solid #262626;
-    padding-top: 20px;
-    color: #d4d4d4;
-    font-weight: 300;
+.feature{
+    background:#111111;
+    border:1px solid #1f1f1f;
+    padding:28px 20px;
+    border-radius:18px;
+    color:#e5e5e5;
 }
 
 /* TESTIMONIALS */
-.testimonials {
-    margin-top: 80px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+.testimonials{
+    margin-top:45px;
+    max-width:760px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
 }
 
-.testimonial {
-    margin-bottom: 25px;
-    padding-left: 15px;
-    border-left: 2px solid #404040;
+.testimonial{
+    background:#111111;
+    border:1px solid #1f1f1f;
+    border-radius:18px;
+    padding:22px;
+    margin-bottom:18px;
 }
 
-.testimonial p {
-    margin: 0 0 6px;
-    color: #d4d4d4;
-    font-weight: 300;
+.testimonial p{
+    margin:0 0 8px;
+    color:#e5e5e5;
 }
 
-.testimonial span {
-    font-size: 12px;
-    color: #777;
+.testimonial span{
+    color:#777;
+    font-size:13px;
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 50px;
-    font-size: 12px;
-    color: #666;
-    border-top: 1px solid #1f1f1f;
-    margin-top: 60px;
+footer{
+    text-align:center;
+    padding:45px 20px;
+    color:#666;
+    font-size:13px;
+    border-top:1px solid #1a1a1a;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.hero{
+    padding:35px 18px 45px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section h2{
+    font-size:28px;
+}
+
+.btn{
+    width:90%;
+    max-width:320px;
+}
 }
 </style>
 </head>
@@ -156,58 +187,60 @@ footer {
 <body>
 
 <header>
-    <div class="logo">ÓPTICA AURORA</div>
+<div class="logo">ÓPTICA AURORA</div>
 </header>
 
 <section class="hero">
 
-    <h1>Clareza é luxo</h1>
+<h1>Clareza é luxo</h1>
 
-    <p>Exames de precisão, lentes premium e armações selecionadas para quem valoriza o essencial: ver bem e viver melhor.</p>
+<p>Exames de precisão, lentes premium e armações selecionadas para quem valoriza ver bem, sentir-se bem e viver melhor.</p>
 
-    <img src="lentes.jpg">
+<img src="lentes.jpg" alt="Óptica Aurora">
 
-    <a class="btn" href="https://wa.me/5548998163063">Agendar consulta</a>
-
-</section>
-
-<section class="section">
-
-    <h2>Uma experiência óptica diferente</h2>
-
-    <p>Menos volume. Mais precisão. Cada detalhe pensado para elevar sua forma de ver o mundo.</p>
-
-    <div class="features">
-        <div class="feature">Exames de alta precisão</div>
-        <div class="feature">Armações selecionadas</div>
-        <div class="feature">Lentes de performance óptica</div>
-        <div class="feature">Atendimento personalizado</div>
-    </div>
+<a class="btn" href="https://wa.me/5548998163063">Agendar consulta</a>
 
 </section>
 
 <section class="section">
 
-    <h2>Depoimentos discretos</h2>
+<h2>Uma experiência óptica superior</h2>
 
-    <div class="testimonials">
+<p>Cada detalhe pensado para entregar conforto visual, estética refinada e atendimento exclusivo.</p>
 
-        <div class="testimonial">
-            <p>“Atendimento extremamente cuidadoso e profissional.”</p>
-            <span>— Cliente</span>
-        </div>
+<div class="features">
+<div class="feature">Exames de alta precisão</div>
+<div class="feature">Armações premium</div>
+<div class="feature">Lentes de máxima performance</div>
+<div class="feature">Atendimento personalizado</div>
+</div>
 
-        <div class="testimonial">
-            <p>“A qualidade das lentes mudou minha experiência visual.”</p>
-            <span>— Cliente</span>
-        </div>
+</section>
 
-        <div class="testimonial">
-            <p>“Simples, elegante e impecável em cada detalhe.”</p>
-            <span>— Cliente</span>
-        </div>
+<section class="section">
 
-    </div>
+<h2>Depoimentos</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>“Atendimento impecável e muito profissional.”</p>
+<span>— Cliente</span>
+</div>
+
+<div class="testimonial">
+<p>“As lentes mudaram totalmente meu conforto visual.”</p>
+<span>— Cliente</span>
+</div>
+
+<div class="testimonial">
+<p>“Elegância, qualidade e confiança em cada detalhe.”</p>
+<span>— Cliente</span>
+</div>
+
+</div>
+
+<a class="btn" href="https://wa.me/5548998163063">Falar no WhatsApp</a>
 
 </section>
 
