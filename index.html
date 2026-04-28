@@ -5,180 +5,196 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Óptica Aurora</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:'Inter',sans-serif;
-    background:#0a0a0a;
-    color:#f5f5f5;
+font-family:'Inter',sans-serif;
+background:#0a0a0a;
+color:#f5f5f5;
 }
 
 /* HEADER */
 header{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:24px 20px;
+padding:24px 20px;
+text-align:center;
+border-bottom:1px solid #1a1a1a;
 }
 
 .logo{
-    font-size:14px;
-    letter-spacing:3px;
-    color:#d4d4d4;
-    font-weight:500;
+font-size:14px;
+letter-spacing:3px;
+font-weight:600;
+color:#d4d4d4;
 }
 
 /* HERO */
 .hero{
-    text-align:center;
-    padding:50px 20px 60px;
-    max-width:1100px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
+padding:55px 20px 35px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:48px;
-    margin:0 0 14px;
-    font-weight:600;
-    letter-spacing:-1px;
+font-size:48px;
+font-weight:700;
+letter-spacing:-1px;
+margin-bottom:14px;
 }
 
 .hero p{
-    max-width:620px;
-    margin:0 auto 28px;
-    color:#a3a3a3;
-    line-height:1.7;
-    font-size:18px;
+max-width:650px;
+margin:auto;
+color:#a3a3a3;
+font-size:18px;
+line-height:1.7;
 }
 
 .hero img{
-    display:block;
-    width:100%;
-    max-width:720px;
-    margin:35px auto 0;
-    border-radius:22px;
-    box-shadow:0 20px 60px rgba(0,0,0,.45);
+display:block;
+width:100%;
+max-width:720px;
+margin:38px auto 0;
+border-radius:22px;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
 }
 
 /* BUTTON */
 .btn{
-    display:block;
-    width:fit-content;
-    margin:40px auto 0;
-    padding:14px 20px;
-    background:#25D366;
-    color:#ffffff;
-    text-decoration:none;
-    border-radius:999px;
-    font-weight:600;
-    transition:.3s;
+display:block;
+width:fit-content;
+margin:40px auto 0;
+padding:14px 22px;
+background:#22c55e;
+color:#fff;
+text-decoration:none;
+border-radius:999px;
+font-weight:600;
+font-size:15px;
+transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-2px);
-    opacity:.92;
+background:#16a34a;
+transform:translateY(-2px);
 }
 
 /* SECTION */
 .section{
-    padding:5px 20px;
-    text-align:center;
-    max-width:1100px;
-    margin:auto;
+max-width:1100px;
+margin:auto;
+padding:25px 20px 70px;
+text-align:center;
 }
 
 .section h2{
-    font-size:34px;
-    margin:0 0 12px;
-    font-weight:600;
-    letter-spacing:-0.5px;
+font-size:34px;
+font-weight:700;
+margin-bottom:12px;
+letter-spacing:-0.5px;
 }
 
 .section p{
-    color:#a3a3a3;
-    max-width:650px;
-    margin:0 auto;
-    line-height:1.7;
-    font-size:17px;
+max-width:650px;
+margin:auto;
+color:#a3a3a3;
+line-height:1.7;
+font-size:17px;
 }
 
 /* FEATURES */
 .features{
-    margin-top:50px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:22px;
+margin-top:45px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
 }
 
 .feature{
-    background:#111111;
-    border:1px solid #1f1f1f;
-    padding:28px 20px;
-    border-radius:18px;
-    color:#e5e5e5;
+background:#111111;
+border:1px solid #1f1f1f;
+padding:28px 20px;
+border-radius:18px;
+color:#e5e5e5;
+font-size:15px;
 }
 
 /* TESTIMONIALS */
 .testimonials{
-    margin-top:45px;
-    max-width:760px;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:left;
+margin-top:45px;
+max-width:760px;
+margin-left:auto;
+margin-right:auto;
+text-align:left;
 }
 
 .testimonial{
-    background:#111111;
-    border:1px solid #1f1f1f;
-    border-radius:18px;
-    padding:22px;
-    margin-bottom:18px;
+background:#111111;
+border:1px solid #1f1f1f;
+border-left:4px solid #facc15;
+border-radius:18px;
+padding:22px;
+margin-bottom:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.stars{
+color:#facc15;
+font-size:16px;
+letter-spacing:2px;
+margin-bottom:10px;
 }
 
 .testimonial p{
-    margin:0 0 8px;
-    color:#e5e5e5;
+margin:0 0 8px;
+color:#e5e5e5;
+line-height:1.6;
 }
 
 .testimonial span{
-    color:#777;
-    font-size:13px;
+font-size:13px;
+color:#888;
 }
 
 /* FOOTER */
 footer{
-    text-align:center;
-    padding:45px 20px;
-    color:#666;
-    font-size:13px;
-    border-top:1px solid #1a1a1a;
-    margin-top:40px;
+text-align:center;
+padding:45px 20px;
+color:#666;
+font-size:13px;
+border-top:1px solid #1a1a1a;
+margin-top:20px;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
 .hero{
-    padding:35px 18px 45px;
+padding:40px 18px 30px;
 }
 
 .hero h1{
-    font-size:36px;
+font-size:36px;
 }
 
 .hero p{
-    font-size:16px;
+font-size:16px;
 }
 
 .section h2{
-    font-size:28px;
+font-size:28px;
 }
 
 .btn{
-    width:90%;
-    max-width:320px;
+width:90%;
+max-width:300px;
 }
 }
 </style>
@@ -198,7 +214,7 @@ footer{
 
 <img src="lentes.jpg" alt="Óptica Aurora">
 
-<a class="btn" href="https://wa.me/5548998163063">Agendar consulta</a>
+<a class="btn" href="https://wa.me/5548998163063">Quero saber mais</a>
 
 </section>
 
@@ -219,22 +235,25 @@ footer{
 
 <section class="section">
 
-<h2>Depoimentos</h2>
+<h2>O que nossos clientes dizem</h2>
 
 <div class="testimonials">
 
 <div class="testimonial">
-<p>“Atendimento impecável e muito profissional.”</p>
+<div class="stars">★★★★★</div>
+<p>Atendimento impecável e muito profissional. Me senti em um lugar realmente diferenciado.</p>
 <span>— Cliente</span>
 </div>
 
 <div class="testimonial">
-<p>“As lentes mudaram totalmente meu conforto visual.”</p>
+<div class="stars">★★★★★</div>
+<p>As lentes mudaram totalmente meu conforto visual. Qualidade excelente.</p>
 <span>— Cliente</span>
 </div>
 
 <div class="testimonial">
-<p>“Elegância, qualidade e confiança em cada detalhe.”</p>
+<div class="stars">★★★★★</div>
+<p>Elegância, confiança e atenção em cada detalhe. Recomendo sem pensar duas vezes.</p>
 <span>— Cliente</span>
 </div>
 
