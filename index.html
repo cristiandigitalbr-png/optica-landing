@@ -118,18 +118,14 @@ color:#fff;
 .section{
 max-width:1180px;
 margin:auto;
-padding:55px 20px;
+padding:70px 20px 55px;
 text-align:center;
-}
-
-.compacta{
-padding-top:18px;
 }
 
 .section h2{
 font-size:31px;
 font-weight:600;
-margin-bottom:14px;
+margin-bottom:16px;
 }
 
 .section p{
@@ -219,6 +215,16 @@ color:#facc15;
 margin-bottom:10px;
 }
 
+/* IMAGE PREMIUM */
+.premium-img{
+width:100%;
+max-width:600px;
+display:block;
+margin:10px auto 50px;
+border-radius:18px;
+box-shadow:0 18px 50px rgba(0,0,0,.45);
+}
+
 /* FOOTER */
 footer{
 text-align:center;
@@ -228,14 +234,16 @@ color:#666;
 border-top:1px solid rgba(255,255,255,.05);
 }
 
-/* IMAGE PREMIUM */
-.premium-img{
-width:100%;
-max-width:600px;
-display:block;
-margin:10px auto 50px;
-border-radius:18px;
-box-shadow:0 18px 50px rgba(0,0,0,.45);
+/* 🔥 ANIMACIONES SCROLL */
+.reveal{
+opacity:0;
+transform: translateY(30px);
+transition: all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform: translateY(0);
 }
 
 /* MOBILE */
@@ -259,11 +267,11 @@ max-width:320px;
 
 <body>
 
-<header>
+<header class="reveal">
 <div class="logo">ÓPTICA AURORA</div>
 </header>
 
-<section class="hero">
+<section class="hero reveal">
 
 <div class="hero-tag">VISÃO PREMIUM • FLORIANÓPOLIS</div>
 
@@ -277,7 +285,7 @@ max-width:320px;
 
 </section>
 
-<section class="section">
+<section class="section reveal">
 
 <h2>Uma experiência óptica superior</h2>
 
@@ -285,22 +293,22 @@ max-width:320px;
 
 <div class="features">
 
-<div class="feature">
+<div class="feature reveal">
 <div class="feature-title">Exames precisos</div>
 <div class="feature-desc">Tecnologia moderna para avaliar sua visão.</div>
 </div>
 
-<div class="feature">
+<div class="feature reveal">
 <div class="feature-title">Armações premium</div>
 <div class="feature-desc">Modelos elegantes e confortáveis.</div>
 </div>
 
-<div class="feature">
+<div class="feature reveal">
 <div class="feature-title">Lentes avançadas</div>
 <div class="feature-desc">Mais nitidez e proteção visual.</div>
 </div>
 
-<div class="feature">
+<div class="feature reveal">
 <div class="feature-title">Atendimento exclusivo</div>
 <div class="feature-desc">Orientação personalizada.</div>
 </div>
@@ -309,11 +317,9 @@ max-width:320px;
 
 </section>
 
-<section class="section compacta">
+<section class="section reveal">
 
-<img src="lentes2.jpg" class="premium-img" alt="Óptica Aurora">
-
-</div>
+<img src="lentes2.jpg" class="premium-img reveal" alt="Óptica Aurora">
 
 <h2>Onde estamos</h2>
 
@@ -324,14 +330,14 @@ max-width:320px;
 Florianópolis - SC
 </div>
 
-<div class="map-box">
+<div class="map-box reveal">
 <iframe
 src="https://www.google.com/maps?q=Dom%20Jo%C3%A3o%20Becker%201080%20Ingleses%20Norte%20Florianopolis&output=embed"
 loading="lazy">
 </iframe>
 </div>
 
-<a class="btn btn-map"
+<a class="btn btn-map reveal"
 href="https://www.google.com/maps/dir/?api=1&destination=Dom+João+Becker+1080+Ingleses+Norte+Florianopolis"
 target="_blank">
 Abrir no Google Maps
@@ -339,36 +345,50 @@ Abrir no Google Maps
 
 </section>
 
-<section class="section compacta">
+<section class="section reveal">
 
 <h2>O que nossos clientes dizem</h2>
 
 <div class="testimonials">
 
-<div class="testimonial">
+<div class="testimonial reveal">
 <div class="stars">★★★★★</div>
 <p>Atendimento impecável e muito profissional.</p>
 </div>
 
-<div class="testimonial">
+<div class="testimonial reveal">
 <div class="stars">★★★★★</div>
 <p>Lentes de altíssima qualidade, mudou meu conforto visual.</p>
 </div>
 
-<div class="testimonial">
+<div class="testimonial reveal">
 <div class="stars">★★★★★</div>
 <p>Experiência premium do começo ao fim.</p>
 </div>
 
 </div>
 
-<a class="btn btn-whatsapp" href="https://wa.me/5548998163063">Agendar atendimento</a>
+<a class="btn btn-whatsapp reveal" href="https://wa.me/5548998163063">Agendar atendimento</a>
 
 </section>
 
-<footer>
+<footer class="reveal">
 © 2026 Óptica Aurora. Todos os direitos reservados.
 </footer>
+
+<script>
+const elements = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('active');
+    }
+  });
+}, { threshold: 0.15 });
+
+elements.forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
